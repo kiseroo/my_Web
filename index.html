@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Temuulen's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="space-background">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="galaxy"></div>
+        <div class="nebula"></div>
+        
+        <!-- Shooting Stars -->
+        <div class="shooting-stars">
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+            <div class="meteor"></div>
+        </div>
+        
+        <!-- Solar System -->
+        <div class="solar-system">
+            <div class="sun"></div>
+            <div class="orbit earth-orbit">
+                <div class="planet earth">
+                    <div class="earth-cloud-layer"></div>
+                    <div class="earth-atmosphere"></div>
+                    <div class="moon"></div>
+                </div>
+            </div>
+            <div class="orbit mars-orbit">
+                <div class="planet mars"></div>
+            </div>
+            <div class="orbit jupiter-orbit">
+                <div class="planet jupiter"></div>
+            </div>
+            <div class="asteroid-belt"></div>
+        </div>
+
+        <!-- Additional Meteors -->
+        <div class="meteors">
+            <div class="meteor-shower"></div>
+            <div class="meteor-shower"></div>
+            <div class="meteor-shower"></div>
+            <div class="meteor-shower"></div>
+        </div>
+    </div>
+
+    <div class="loading">
+        <div class="loading-star"></div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">T</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Temuulen</h1>
+            <p>Student & Future Developer</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a 21-year-old student passionate about technology and innovation. Currently pursuing my education at the Mongolian University of Science and Technology.</p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>21</h3>
+                    <p>Years Old</p>
+                </div>
+                <div class="stat-item">
+                    <h3>MUST</h3>
+                    <p>University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-card">
+            <h3>Mongolian University of Science and Technology</h3>
+            <p>Current Student</p>
+            <p>Pursuing degree in Technology</p>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-card">
+            <h3>Orda Wealth LLC</h3>
+            <p>Full-stack development using modern web technologies
+              <ul class="experience-list">
+                <li>Developed financial dashboards with React & Node.js</li>
+                <li>Implemented real-time data visualization using D3.js</li>
+                <li>Optimized API performance by 40% through query optimization</li>
+              </ul>
+            </p>
+            <a href="https://orda.mn" class="gradient-link" target="_blank">View Company Website</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Space Exploration Simulator</h3>
+            <p>Three.js-based orbital mechanics visualizer with physics engine
+              <span class="tech-stack">React/TypeScript/Three.js</span>
+            </p>
+            <a href="#" class="gradient-link" onclick="showProjectDemo('space-sim')">Live Demo</a>
+        </div>
+    </section>
+
+    <section id="community" class="community">
+        <h2>Community</h2>
+        <div class="community-content">
+            <div class="community-highlight">
+              <i class="fas fa-rocket community-icon"></i>
+              <h3>Tech Education Content Creator</h3>
+              <p>Regular streams about web development and space tech on:
+                <a href="#" class="platform-link">YouTube</a> •
+                <a href="#" class="platform-link">Twitch</a>
+              </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Temuulen. All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loading');
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
